@@ -99,13 +99,14 @@
 		F9859B3D2B39A48E0029D491 /* FolderAndFeed */ = {
 			isa = PBXGroup;
 			children = (
+				F9859B712B39B0660029D491 /* Home */,
+				F9859B4F2B39A48F0029D491 /* Info.plist */,
 				F9859B3E2B39A48E0029D491 /* AppDelegate.swift */,
 				F9859B422B39A48E0029D491 /* ViewController.swift */,
-				F9859B442B39A48E0029D491 /* Main.storyboard */,
 				F9859B4A2B39A48F0029D491 /* Assets.xcassets */,
-				F9859B4C2B39A48F0029D491 /* LaunchScreen.storyboard */,
-				F9859B4F2B39A48F0029D491 /* Info.plist */,
 				F9859B472B39A48E0029D491 /* FolderAndFeed.xcdatamodeld */,
+				F9859B4C2B39A48F0029D491 /* LaunchScreen.storyboard */,
+				F9859B442B39A48E0029D491 /* Main.storyboard */,
 			);
 			path = FolderAndFeed;
 			sourceTree = "<group>";
@@ -125,6 +126,13 @@
 				F9859B642B39A48F0029D491 /* FolderAndFeedUITestsLaunchTests.swift */,
 			);
 			path = FolderAndFeedUITests;
+			sourceTree = "<group>";
+		};
+		F9859B712B39B0660029D491 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
