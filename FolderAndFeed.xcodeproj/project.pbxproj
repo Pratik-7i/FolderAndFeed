@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F9859B3F2B39A48E0029D491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B3E2B39A48E0029D491 /* AppDelegate.swift */; };
-		F9859B412B39A48E0029D491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B402B39A48E0029D491 /* SceneDelegate.swift */; };
 		F9859B432B39A48E0029D491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B422B39A48E0029D491 /* ViewController.swift */; };
 		F9859B462B39A48E0029D491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9859B442B39A48E0029D491 /* Main.storyboard */; };
 		F9859B492B39A48E0029D491 /* FolderAndFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9859B472B39A48E0029D491 /* FolderAndFeed.xcdatamodeld */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F9859B3B2B39A48E0029D491 /* FolderAndFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderAndFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9859B3E2B39A48E0029D491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9859B402B39A48E0029D491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9859B422B39A48E0029D491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9859B452B39A48E0029D491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9859B482B39A48E0029D491 /* FolderAndFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FolderAndFeed.xcdatamodel; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				F9859B3E2B39A48E0029D491 /* AppDelegate.swift */,
-				F9859B402B39A48E0029D491 /* SceneDelegate.swift */,
 				F9859B422B39A48E0029D491 /* ViewController.swift */,
 				F9859B442B39A48E0029D491 /* Main.storyboard */,
 				F9859B4A2B39A48F0029D491 /* Assets.xcassets */,
@@ -264,7 +261,6 @@
 				F9859B432B39A48E0029D491 /* ViewController.swift in Sources */,
 				F9859B492B39A48E0029D491 /* FolderAndFeed.xcdatamodeld in Sources */,
 				F9859B3F2B39A48E0029D491 /* AppDelegate.swift in Sources */,
-				F9859B412B39A48E0029D491 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
