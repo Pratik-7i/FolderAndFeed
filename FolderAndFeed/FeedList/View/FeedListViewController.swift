@@ -45,6 +45,19 @@ class FeedListViewController: UIViewController {
         self.errorView.isHidden = !isError
         self.errorLabel.text = errorMessage
     }
+    
+    func shareFeed(url: String) {
+        let items = [URL(string: url)!]
+        let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        DispatchQueue.main.async {
+            self.present(activityController, animated: true)
+        }
+    }
+    
+    func navigateToComments() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension FeedListViewController: FeedListDelegate {
@@ -67,7 +80,17 @@ extension FeedListViewController: UITableViewDataSource
         let cell = tableView.dequeueReusableCell(cellClass: FeedListCell.self, for: indexPath)
         if let feed = viewModel.feeds?[indexPath.row] {
             cell.load(feed, index: indexPath.row)
+            cell.shareButtonTapped = { [weak self] sender in
+                guard let self = self,
+                        let feedUrl = feed.url else { return }
+                self.shareFeed(url: feedUrl)
+            }
         }
+        cell.commentButtonTapped = { [weak self] sender in
+            guard let self = self else { return }
+            self.navigateToComments()
+        }
+        
         return cell
     }
 }

@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0qB-GR-vwG">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="5" y="103" width="383" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m9q-Qr-EaG">
                                     <size key="itemSize" width="128" height="128"/>
@@ -120,9 +120,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7ut-5Z-SNo" firstAttribute="bottom" secondItem="0qB-GR-vwG" secondAttribute="bottom" id="Hs2-Rm-aOS"/>
-                            <constraint firstItem="0qB-GR-vwG" firstAttribute="leading" secondItem="7ut-5Z-SNo" secondAttribute="leading" id="K0t-xw-YPv"/>
+                            <constraint firstItem="0qB-GR-vwG" firstAttribute="leading" secondItem="7ut-5Z-SNo" secondAttribute="leading" constant="5" id="K0t-xw-YPv"/>
                             <constraint firstItem="0qB-GR-vwG" firstAttribute="top" secondItem="7ut-5Z-SNo" secondAttribute="top" id="azT-DA-uTb"/>
-                            <constraint firstItem="7ut-5Z-SNo" firstAttribute="trailing" secondItem="0qB-GR-vwG" secondAttribute="trailing" id="b86-fT-eOr"/>
+                            <constraint firstItem="7ut-5Z-SNo" firstAttribute="trailing" secondItem="0qB-GR-vwG" secondAttribute="trailing" constant="5" id="b86-fT-eOr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FKL-S5-91I"/>
@@ -220,6 +220,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHa-P4-cqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966" y="391"/>
+        </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="aVA-WI-Sid">
+            <objects>
+                <viewController storyboardIdentifier="CommentsViewController" id="wcS-Ph-r6A" customClass="CommentsViewController" customModule="FolderAndFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULY-ld-On5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-CB-CWh">
+                                <rect key="frame" x="131" y="59" width="131" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add comment"/>
+                                <connections>
+                                    <action selector="commentButtonTapped:" destination="wcS-Ph-r6A" eventType="touchUpInside" id="CVN-QY-Qfk"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-Xo-Akp">
+                                <rect key="frame" x="0.0" y="102" width="393" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wcS-Ph-r6A" id="HrJ-Lh-LJE"/>
+                                    <outlet property="delegate" destination="wcS-Ph-r6A" id="b9P-Zn-m7T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YxU-2I-3Gh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbW-Xo-Akp" firstAttribute="top" secondItem="qvK-CB-CWh" secondAttribute="bottom" constant="8" symbolic="YES" id="7fQ-ix-sIj"/>
+                            <constraint firstItem="qvK-CB-CWh" firstAttribute="centerX" secondItem="YxU-2I-3Gh" secondAttribute="centerX" id="BBj-sf-TMb"/>
+                            <constraint firstItem="pbW-Xo-Akp" firstAttribute="leading" secondItem="YxU-2I-3Gh" secondAttribute="leading" id="NnD-vH-llP"/>
+                            <constraint firstItem="qvK-CB-CWh" firstAttribute="top" secondItem="YxU-2I-3Gh" secondAttribute="top" id="Tvv-ST-5bx"/>
+                            <constraint firstItem="YxU-2I-3Gh" firstAttribute="bottom" secondItem="pbW-Xo-Akp" secondAttribute="bottom" id="luv-kB-HNY"/>
+                            <constraint firstItem="YxU-2I-3Gh" firstAttribute="trailing" secondItem="pbW-Xo-Akp" secondAttribute="trailing" id="xc2-sH-xEc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentsTable" destination="pbW-Xo-Akp" id="12d-OV-pEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fK9-cN-vgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690.8396946564885" y="390.84507042253523"/>
         </scene>
     </scenes>
     <resources>

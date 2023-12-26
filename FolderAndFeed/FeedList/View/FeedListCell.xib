@@ -86,11 +86,17 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
                                         <state key="normal" image="comment"/>
+                                        <connections>
+                                            <action selector="commentButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yiV-uX-mVe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-Hd-OI5">
                                         <rect key="frame" x="45" y="0.0" width="40" height="40"/>
                                         <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="5"/>
                                         <state key="normal" image="share"/>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="u3P-U3-EiB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

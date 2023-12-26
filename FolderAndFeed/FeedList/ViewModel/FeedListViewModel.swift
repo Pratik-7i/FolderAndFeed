@@ -15,7 +15,7 @@ protocol FeedListDelegate: AnyObject {
 class FeedListViewModel {
     
     weak var listDelegate: FeedListDelegate?
-    var feeds: [FeedModel]?
+    var feeds: [Feed]?
 
     func fetchFeeds() {
         APIManager.request(.getFeeds) { data, error in

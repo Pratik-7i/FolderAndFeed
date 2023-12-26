@@ -17,6 +17,9 @@ class FeedListCell: UITableViewCell, NibProvidable, ReusableView {
     @IBOutlet weak var feedDescLabel: UILabel!
     @IBOutlet weak var feedImageView: UIImageView!
 
+    var commentButtonTapped: ((UIButton)->())? = nil
+    var shareButtonTapped: ((UIButton)->())? = nil
+
     override func awakeFromNib() {
         super.awakeFromNib()
         configureUI()
@@ -29,7 +32,7 @@ class FeedListCell: UITableViewCell, NibProvidable, ReusableView {
         authorImageView.layer.cornerRadius = 18
     }
     
-    func load(_ feed: FeedModel, index: Int) {
+    func load(_ feed: Feed, index: Int) {
         let avatarUrl = "https://i.pravatar.cc/108?/img=\(index)"
         authorImageView.setImage(url: avatarUrl)
         authorNameLabel.text = feed.author
@@ -44,5 +47,14 @@ class FeedListCell: UITableViewCell, NibProvidable, ReusableView {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+}
+
+extension FeedListCell {
+    @IBAction func commentButtonTapped(_ sender: UIButton) {
+        self.commentButtonTapped?(sender)
+    }
+    @IBAction func shareButtonTapped(_ sender: UIButton) {
+        self.shareButtonTapped?(sender)
     }
 }

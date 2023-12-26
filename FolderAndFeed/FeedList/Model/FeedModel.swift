@@ -11,10 +11,10 @@ struct ResponseModel: Codable {
     let status : String?
     let source : String?
     let sortBy : String?
-    let articles : [FeedModel]?
+    let articles : [Feed]?
 }
 
-struct FeedModel: Codable {
+struct Feed: Codable {
     let author : String?
     let title : String?
     let description : String?
