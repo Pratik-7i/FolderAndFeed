@@ -111,9 +111,8 @@
                                     <outlet property="delegate" destination="TWw-TN-yFA" id="O4z-28-ene"/>
                                 </connections>
                             </collectionView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="jwC-ol-KnH">
-                                <rect key="frame" x="186" y="416" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="jwC-ol-KnH">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7ut-5Z-SNo"/>
@@ -123,6 +122,8 @@
                             <constraint firstItem="0qB-GR-vwG" firstAttribute="leading" secondItem="7ut-5Z-SNo" secondAttribute="leading" constant="5" id="K0t-xw-YPv"/>
                             <constraint firstItem="0qB-GR-vwG" firstAttribute="top" secondItem="7ut-5Z-SNo" secondAttribute="top" id="azT-DA-uTb"/>
                             <constraint firstItem="7ut-5Z-SNo" firstAttribute="trailing" secondItem="0qB-GR-vwG" secondAttribute="trailing" constant="5" id="b86-fT-eOr"/>
+                            <constraint firstItem="jwC-ol-KnH" firstAttribute="centerX" secondItem="0Dx-hR-bFn" secondAttribute="centerX" id="n0U-5m-w1T"/>
+                            <constraint firstItem="jwC-ol-KnH" firstAttribute="centerY" secondItem="0Dx-hR-bFn" secondAttribute="centerY" id="yUT-GF-qZi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FKL-S5-91I"/>
@@ -191,9 +192,8 @@
                                     <outlet property="delegate" destination="Z64-BK-cMK" id="mhq-jM-fuV"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-fQ-hvw">
-                                <rect key="frame" x="186" y="416" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-fQ-hvw">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bUS-Fw-GDo"/>
@@ -202,10 +202,12 @@
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="top" secondItem="4wi-hF-mWl" secondAttribute="top" id="2Qn-Zb-xly"/>
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="leading" secondItem="4wi-hF-mWl" secondAttribute="leading" id="9Ra-71-sRx"/>
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="trailing" secondItem="4wi-hF-mWl" secondAttribute="trailing" id="EC4-K9-Gkj"/>
+                            <constraint firstItem="5dO-fQ-hvw" firstAttribute="centerX" secondItem="SU4-VG-Ifa" secondAttribute="centerX" id="Q2O-Pz-txn"/>
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="bottom" secondItem="49A-dZ-cMb" secondAttribute="bottom" id="bfe-HK-Pqb"/>
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="trailing" secondItem="49A-dZ-cMb" secondAttribute="trailing" id="cu5-hj-adz"/>
                             <constraint firstItem="49A-dZ-cMb" firstAttribute="leading" secondItem="bUS-Fw-GDo" secondAttribute="leading" id="dxf-P0-DkQ"/>
                             <constraint firstItem="49A-dZ-cMb" firstAttribute="top" secondItem="bUS-Fw-GDo" secondAttribute="top" id="f22-vN-fEX"/>
+                            <constraint firstItem="5dO-fQ-hvw" firstAttribute="centerY" secondItem="SU4-VG-Ifa" secondAttribute="centerY" id="fQE-JH-ktb"/>
                             <constraint firstItem="bUS-Fw-GDo" firstAttribute="bottom" secondItem="4wi-hF-mWl" secondAttribute="bottom" id="gAL-Ba-O0r"/>
                         </constraints>
                     </view>
