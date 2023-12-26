@@ -85,8 +85,7 @@ extension FeedListViewController: UITableViewDataSource
         if let feed = viewModel.feeds?[indexPath.row] {
             cell.load(feed, index: indexPath.row)
             cell.shareButtonTapped = { [weak self] sender in
-                guard let self = self,
-                        let feedUrl = feed.url else { return }
+                guard let self = self, let feedUrl = feed.url else { return }
                 self.shareFeed(url: feedUrl, sender: sender)
             }
         }
