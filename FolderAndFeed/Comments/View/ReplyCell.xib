@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reply" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE0-Cq-g6B">
-                        <rect key="frame" x="74" y="8" width="238" height="24"/>
+                        <rect key="frame" x="80" y="8" width="232" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-8j-1E1">
-                        <rect key="frame" x="40" y="8" width="26" height="26"/>
+                        <rect key="frame" x="46" y="8" width="26" height="26"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Tkc-8j-1E1" secondAttribute="height" multiplier="1:1" id="CoU-If-x85"/>
                             <constraint firstAttribute="width" constant="26" id="L7A-Oq-p8q"/>
@@ -31,7 +31,7 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Tkc-8j-1E1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="1N0-RB-UvX"/>
+                    <constraint firstItem="Tkc-8j-1E1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="46" id="1N0-RB-UvX"/>
                     <constraint firstItem="YE0-Cq-g6B" firstAttribute="leading" secondItem="Tkc-8j-1E1" secondAttribute="trailing" constant="8" id="6eM-la-Feh"/>
                     <constraint firstAttribute="bottom" secondItem="YE0-Cq-g6B" secondAttribute="bottom" constant="12" id="L7e-Eq-9Sh"/>
                     <constraint firstItem="Tkc-8j-1E1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="TUV-Z2-tgB"/>
