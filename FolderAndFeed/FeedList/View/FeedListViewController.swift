@@ -46,9 +46,13 @@ class FeedListViewController: UIViewController {
         self.errorLabel.text = errorMessage
     }
     
-    func shareFeed(url: String) {
+    func shareFeed(url: String, sender: UIButton) {
         let items = [URL(string: url)!]
         let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        // For iPad, the 'UIActivityViewController' will be shown as pop over
+        if let popover = activityController.popoverPresentationController {
+            popover.sourceView = sender
+        }
         DispatchQueue.main.async {
             self.present(activityController, animated: true)
         }
@@ -83,7 +87,7 @@ extension FeedListViewController: UITableViewDataSource
             cell.shareButtonTapped = { [weak self] sender in
                 guard let self = self,
                         let feedUrl = feed.url else { return }
-                self.shareFeed(url: feedUrl)
+                self.shareFeed(url: feedUrl, sender: sender)
             }
         }
         cell.commentButtonTapped = { [weak self] sender in
@@ -92,11 +96,5 @@ extension FeedListViewController: UITableViewDataSource
         }
         
         return cell
-    }
-}
-
-extension FeedListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 }
