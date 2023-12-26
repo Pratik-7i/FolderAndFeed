@@ -20,6 +20,21 @@
 		F9859B792B39C5270029D491 /* FolderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B782B39C5270029D491 /* FolderListViewController.swift */; };
 		F9859B7C2B39C60C0029D491 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B7B2B39C60C0029D491 /* Constants.swift */; };
 		F9859B7E2B39C6BC0029D491 /* FolderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B7D2B39C6BC0029D491 /* FolderListViewModel.swift */; };
+		F9859B812B39D6180029D491 /* FolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B7F2B39D6180029D491 /* FolderCell.swift */; };
+		F9859B822B39D6180029D491 /* FolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9859B802B39D6180029D491 /* FolderCell.xib */; };
+		F9859B852B39D7730029D491 /* UITableView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B832B39D7730029D491 /* UITableView+Common.swift */; };
+		F9859B862B39D7730029D491 /* UICollectionView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B842B39D7730029D491 /* UICollectionView+Common.swift */; };
+		F9859B8B2B3A2ADF0029D491 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B8A2B3A2ADF0029D491 /* WebServiceManager.swift */; };
+		F9859B8D2B3A2C2C0029D491 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B8C2B3A2C2C0029D491 /* FeedListViewController.swift */; };
+		F9859B8F2B3A2CE90029D491 /* FeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B8E2B3A2CE90029D491 /* FeedListViewModel.swift */; };
+		F9859B912B3A2DC10029D491 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B902B3A2DC10029D491 /* FeedModel.swift */; };
+		F9859B942B3A33C90029D491 /* FeedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B922B3A33C90029D491 /* FeedListCell.swift */; };
+		F9859B952B3A33C90029D491 /* FeedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9859B932B3A33C90029D491 /* FeedListCell.xib */; };
+		F9859B982B3A3E2C0029D491 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F9859B972B3A3E2C0029D491 /* Kingfisher */; };
+		F9859B9A2B3A3E6F0029D491 /* UIImageView+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B992B3A3E6F0029D491 /* UIImageView+Async.swift */; };
+		F9859B9C2B3A40F80029D491 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9859B9B2B3A40F80029D491 /* Colors.xcassets */; };
+		F9859B9E2B3A4F950029D491 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B9D2B3A4F950029D491 /* Date+Extension.swift */; };
+		F9859BA02B3A4FE90029D491 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9859B9F2B3A4FE90029D491 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +72,20 @@
 		F9859B782B39C5270029D491 /* FolderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewController.swift; sourceTree = "<group>"; };
 		F9859B7B2B39C60C0029D491 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F9859B7D2B39C6BC0029D491 /* FolderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListViewModel.swift; sourceTree = "<group>"; };
+		F9859B7F2B39D6180029D491 /* FolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCell.swift; sourceTree = "<group>"; };
+		F9859B802B39D6180029D491 /* FolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderCell.xib; sourceTree = "<group>"; };
+		F9859B832B39D7730029D491 /* UITableView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Common.swift"; sourceTree = "<group>"; };
+		F9859B842B39D7730029D491 /* UICollectionView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Common.swift"; sourceTree = "<group>"; };
+		F9859B8A2B3A2ADF0029D491 /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		F9859B8C2B3A2C2C0029D491 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
+		F9859B8E2B3A2CE90029D491 /* FeedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewModel.swift; sourceTree = "<group>"; };
+		F9859B902B3A2DC10029D491 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		F9859B922B3A33C90029D491 /* FeedListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListCell.swift; sourceTree = "<group>"; };
+		F9859B932B3A33C90029D491 /* FeedListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedListCell.xib; sourceTree = "<group>"; };
+		F9859B992B3A3E6F0029D491 /* UIImageView+Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Async.swift"; sourceTree = "<group>"; };
+		F9859B9B2B3A40F80029D491 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F9859B9D2B3A4F950029D491 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F9859B9F2B3A4FE90029D491 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9859B982B3A3E2C0029D491 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,16 +137,18 @@
 		F9859B3D2B39A48E0029D491 /* FolderAndFeed */ = {
 			isa = PBXGroup;
 			children = (
-				F9859B7A2B39C5F70029D491 /* Other */,
+				F9859B442B39A48E0029D491 /* Main.storyboard */,
 				F9859B712B39B0660029D491 /* Home */,
 				F9859B772B39C4C30029D491 /* FolderList */,
+				F9859B892B3A1FE00029D491 /* FeedList */,
+				F9859B7A2B39C5F70029D491 /* Utility */,
 				F9859B742B39C3560029D491 /* Extension */,
 				F9859B4F2B39A48F0029D491 /* Info.plist */,
 				F9859B3E2B39A48E0029D491 /* AppDelegate.swift */,
 				F9859B4A2B39A48F0029D491 /* Assets.xcassets */,
+				F9859B9B2B3A40F80029D491 /* Colors.xcassets */,
 				F9859B472B39A48E0029D491 /* FolderAndFeed.xcdatamodeld */,
 				F9859B4C2B39A48F0029D491 /* LaunchScreen.storyboard */,
-				F9859B442B39A48E0029D491 /* Main.storyboard */,
 			);
 			path = FolderAndFeed;
 			sourceTree = "<group>";
@@ -149,7 +181,12 @@
 		F9859B742B39C3560029D491 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F9859B832B39D7730029D491 /* UITableView+Common.swift */,
+				F9859B842B39D7730029D491 /* UICollectionView+Common.swift */,
 				F9859B752B39C3C30029D491 /* FileManager+Extension.swift .swift */,
+				F9859B992B3A3E6F0029D491 /* UIImageView+Async.swift */,
+				F9859B9D2B3A4F950029D491 /* Date+Extension.swift */,
+				F9859B9F2B3A4FE90029D491 /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -157,18 +194,33 @@
 		F9859B772B39C4C30029D491 /* FolderList */ = {
 			isa = PBXGroup;
 			children = (
-				F9859B782B39C5270029D491 /* FolderListViewController.swift */,
 				F9859B7D2B39C6BC0029D491 /* FolderListViewModel.swift */,
+				F9859B782B39C5270029D491 /* FolderListViewController.swift */,
+				F9859B7F2B39D6180029D491 /* FolderCell.swift */,
+				F9859B802B39D6180029D491 /* FolderCell.xib */,
 			);
 			path = FolderList;
 			sourceTree = "<group>";
 		};
-		F9859B7A2B39C5F70029D491 /* Other */ = {
+		F9859B7A2B39C5F70029D491 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F9859B8A2B3A2ADF0029D491 /* WebServiceManager.swift */,
 				F9859B7B2B39C60C0029D491 /* Constants.swift */,
 			);
-			path = Other;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F9859B892B3A1FE00029D491 /* FeedList */ = {
+			isa = PBXGroup;
+			children = (
+				F9859B902B3A2DC10029D491 /* FeedModel.swift */,
+				F9859B8E2B3A2CE90029D491 /* FeedListViewModel.swift */,
+				F9859B8C2B3A2C2C0029D491 /* FeedListViewController.swift */,
+				F9859B922B3A33C90029D491 /* FeedListCell.swift */,
+				F9859B932B3A33C90029D491 /* FeedListCell.xib */,
+			);
+			path = FeedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +239,9 @@
 			dependencies = (
 			);
 			name = FolderAndFeed;
+			packageProductDependencies = (
+				F9859B972B3A3E2C0029D491 /* Kingfisher */,
+			);
 			productName = FolderAndFeed;
 			productReference = F9859B3B2B39A48E0029D491 /* FolderAndFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +314,9 @@
 				Base,
 			);
 			mainGroup = F9859B322B39A48E0029D491;
+			packageReferences = (
+				F9859B962B3A3E2C0029D491 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F9859B3C2B39A48E0029D491 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,9 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9859B952B3A33C90029D491 /* FeedListCell.xib in Resources */,
 				F9859B4E2B39A48F0029D491 /* LaunchScreen.storyboard in Resources */,
 				F9859B4B2B39A48F0029D491 /* Assets.xcassets in Resources */,
+				F9859B9C2B3A40F80029D491 /* Colors.xcassets in Resources */,
 				F9859B462B39A48E0029D491 /* Main.storyboard in Resources */,
+				F9859B822B39D6180029D491 /* FolderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +364,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9859B492B39A48E0029D491 /* FolderAndFeed.xcdatamodeld in Sources */,
+				F9859B852B39D7730029D491 /* UITableView+Common.swift in Sources */,
 				F9859B792B39C5270029D491 /* FolderListViewController.swift in Sources */,
 				F9859B7E2B39C6BC0029D491 /* FolderListViewModel.swift in Sources */,
 				F9859B3F2B39A48E0029D491 /* AppDelegate.swift in Sources */,
 				F9859B732B39B1A00029D491 /* HomeViewController.swift in Sources */,
+				F9859B8D2B3A2C2C0029D491 /* FeedListViewController.swift in Sources */,
+				F9859B9A2B3A3E6F0029D491 /* UIImageView+Async.swift in Sources */,
 				F9859B762B39C3C30029D491 /* FileManager+Extension.swift .swift in Sources */,
+				F9859B9E2B3A4F950029D491 /* Date+Extension.swift in Sources */,
+				F9859BA02B3A4FE90029D491 /* String+Extension.swift in Sources */,
+				F9859B862B39D7730029D491 /* UICollectionView+Common.swift in Sources */,
+				F9859B8B2B3A2ADF0029D491 /* WebServiceManager.swift in Sources */,
+				F9859B8F2B3A2CE90029D491 /* FeedListViewModel.swift in Sources */,
+				F9859B912B3A2DC10029D491 /* FeedModel.swift in Sources */,
+				F9859B942B3A33C90029D491 /* FeedListCell.swift in Sources */,
 				F9859B7C2B39C60C0029D491 /* Constants.swift in Sources */,
+				F9859B812B39D6180029D491 /* FolderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9859B962B3A3E2C0029D491 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9859B972B3A3E2C0029D491 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9859B962B3A3E2C0029D491 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F9859B472B39A48E0029D491 /* FolderAndFeed.xcdatamodeld */ = {

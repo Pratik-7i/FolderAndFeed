@@ -8,11 +8,13 @@
 import Foundation
 
 extension FileManager {
-    private static let documentBasePath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
-        .userDomainMask, true).first ?? ""
+    static let documentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                                           .userDomainMask, true).first ?? ""
 
     static func createFolder(at path: String) -> Error? {
-        if !FileManager.default.fileExists(atPath: path) {
+        if FileManager.default.fileExists(atPath: path) {
+            print("Folder already exists!")
+        } else {
             do {
                 try FileManager.default.createDirectory(atPath: path,
                                                         withIntermediateDirectories: true,
