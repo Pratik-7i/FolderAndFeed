@@ -247,20 +247,52 @@
                                     <outlet property="delegate" destination="wcS-Ph-r6A" id="b9P-Zn-m7T"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLL-tQ-82k">
+                                <rect key="frame" x="46.666666666666657" y="379.66666666666669" width="300" height="117.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment" translatesAutoresizingMaskIntoConstraints="NO" id="VW2-vS-OwL">
+                                        <rect key="frame" x="110" y="0.0" width="80" height="80"/>
+                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VW2-vS-OwL" secondAttribute="height" multiplier="1:1" id="gjW-aH-Hep"/>
+                                            <constraint firstAttribute="width" constant="80" id="zRU-0t-4aB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No comments found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTH-xN-cU3">
+                                        <rect key="frame" x="0.0" y="88" width="300" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mTH-xN-cU3" firstAttribute="top" secondItem="VW2-vS-OwL" secondAttribute="bottom" constant="8" id="M2m-QJ-GgV"/>
+                                    <constraint firstItem="VW2-vS-OwL" firstAttribute="centerX" secondItem="jLL-tQ-82k" secondAttribute="centerX" id="TWF-Qt-ZTy"/>
+                                    <constraint firstItem="mTH-xN-cU3" firstAttribute="leading" secondItem="jLL-tQ-82k" secondAttribute="leading" id="YVI-vv-BOd"/>
+                                    <constraint firstAttribute="bottom" secondItem="mTH-xN-cU3" secondAttribute="bottom" constant="8" id="cpg-Bh-ZMT"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTH-xN-cU3" secondAttribute="trailing" id="hEd-Fu-9Tv"/>
+                                    <constraint firstItem="VW2-vS-OwL" firstAttribute="top" secondItem="jLL-tQ-82k" secondAttribute="top" id="jRI-BR-Cpo"/>
+                                    <constraint firstAttribute="width" constant="300" id="khV-gH-3GD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YxU-2I-3Gh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pbW-Xo-Akp" firstAttribute="top" secondItem="qvK-CB-CWh" secondAttribute="bottom" constant="8" symbolic="YES" id="7fQ-ix-sIj"/>
+                            <constraint firstItem="jLL-tQ-82k" firstAttribute="centerY" secondItem="YxU-2I-3Gh" secondAttribute="centerY" id="7zn-jb-P45"/>
                             <constraint firstItem="qvK-CB-CWh" firstAttribute="centerX" secondItem="YxU-2I-3Gh" secondAttribute="centerX" id="BBj-sf-TMb"/>
                             <constraint firstItem="pbW-Xo-Akp" firstAttribute="leading" secondItem="YxU-2I-3Gh" secondAttribute="leading" id="NnD-vH-llP"/>
                             <constraint firstItem="qvK-CB-CWh" firstAttribute="top" secondItem="YxU-2I-3Gh" secondAttribute="top" id="Tvv-ST-5bx"/>
+                            <constraint firstItem="jLL-tQ-82k" firstAttribute="centerX" secondItem="YxU-2I-3Gh" secondAttribute="centerX" id="jtB-13-qh8"/>
                             <constraint firstItem="YxU-2I-3Gh" firstAttribute="bottom" secondItem="pbW-Xo-Akp" secondAttribute="bottom" id="luv-kB-HNY"/>
                             <constraint firstItem="YxU-2I-3Gh" firstAttribute="trailing" secondItem="pbW-Xo-Akp" secondAttribute="trailing" id="xc2-sH-xEc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="commentsTable" destination="pbW-Xo-Akp" id="12d-OV-pEC"/>
+                        <outlet property="noCommentsView" destination="jLL-tQ-82k" id="iIt-ck-CcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK9-cN-vgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -269,11 +301,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="comment" width="100" height="100"/>
         <image name="feedHome" width="50" height="50"/>
         <image name="folderHome" width="50" height="50"/>
         <namedColor name="screenBgColor">
             <color red="0.9570000171661377" green="0.9570000171661377" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

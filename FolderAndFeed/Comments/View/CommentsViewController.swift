@@ -10,6 +10,7 @@ import UIKit
 class CommentsViewController: UIViewController {
     
     @IBOutlet weak var commentsTable: UITableView!
+    @IBOutlet weak var noCommentsView: UIView!
 
     lazy var viewModel = {
         let viewModel = CommentsViewModel()
@@ -26,12 +27,17 @@ class CommentsViewController: UIViewController {
         commentsTable.registerNib(cellClass: ReplyCell.self)
     }
     
+    func updateNoDataView() {
+        noCommentsView.isHidden = self.viewModel.comments.count > 0
+    }
+    
     @IBAction func commentButtonTapped(_ sender: UIButton) {
         showInputDialog(title: "Comment", actionHandler: { (text: String?) in
             if let text = text, text.count > 0 {
                 let comment = Comment(text: text, time: Date(), replies: [])
                 self.viewModel.comments.append(comment)
                 DispatchQueue.main.async {
+                    self.updateNoDataView()
                     self.commentsTable.reloadData()
                 }
             }
