@@ -61,6 +61,9 @@ extension FolderListViewController : UICollectionViewDelegate {
 extension FolderListViewController {
     func didSelectFolder(index i: Int) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "FolderListViewController") as! FolderListViewController
+        let folder = viewModel.fetchedFolders[i]
+        vc.title = folder
+        // Setup ViewModel
         vc.viewModel.parentsArray = self.viewModel.parentsArray
         vc.viewModel.parentsArray.append("\(i+1)")
         let path = viewModel.getFolderPath(forIndex: i)

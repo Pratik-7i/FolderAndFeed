@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EiS-aq-Aug">
-                                <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1XY-ec-f65"/>
+                                    <constraint firstAttribute="width" constant="100" id="1XY-ec-f65"/>
                                     <constraint firstAttribute="width" secondItem="EiS-aq-Aug" secondAttribute="height" multiplier="1:1" id="Fb1-Mf-UWb"/>
                                 </constraints>
                             </imageView>
