@@ -14,6 +14,7 @@ class CommentsViewController: UIViewController {
 
     lazy var viewModel = {
         let viewModel = CommentsViewModel()
+        viewModel.commentsDelegate = self
         return viewModel
     }()
     
@@ -32,29 +33,31 @@ class CommentsViewController: UIViewController {
     }
     
     @IBAction func commentButtonTapped(_ sender: UIButton) {
-        showInputDialog(title: "Comment", actionHandler: { (text: String?) in
-            if let text = text, text.count > 0 {
-                let comment = Comment(text: text, time: Date(), replies: [])
-                self.viewModel.comments.append(comment)
-                DispatchQueue.main.async {
-                    self.updateNoDataView()
-                    self.commentsTable.reloadData()
-                }
-            }
+        showInputDialog(title: "Comment",
+                        actionHandler: { (text: String?) in
+            self.viewModel.addComment(text)
         })
     }
     
     func addReply(forComment index: Int) {
-        showInputDialog(title: "Reply", actionHandler: { (text: String?) in
-            if let text = text, text.count > 0 {
-                let comment = self.viewModel.comments[index]
-                let reply = Reply(text: text, time: Date())
-                comment.replies.append(reply)
-                DispatchQueue.main.async {
-                    self.commentsTable.reloadSections([index], with: .automatic)
-                }
-            }
+        showInputDialog(title: "Reply",
+                        actionHandler: { (text: String?) in
+            self.viewModel.addReply(text, forCommentAtIndex: index)
         })
+    }
+}
+
+extension CommentsViewController: CommentsDelegate {
+    func didAddComment() {
+        DispatchQueue.main.async {
+            self.updateNoDataView()
+            self.commentsTable.reloadData()
+        }
+    }
+    func didAddReply(forCommentAtIndex index: Int) {
+        DispatchQueue.main.async {
+            self.commentsTable.reloadSections([index], with: .automatic)
+        }
     }
 }
 
