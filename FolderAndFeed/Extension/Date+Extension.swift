@@ -7,11 +7,13 @@
 
 import Foundation
 
-extension Date
-{
-    func timeAgo() -> String
-    {
-        let interval = Calendar.current.dateComponents([.year, .month, .weekOfYear, .day, .hour, .minute, .second], from: self, to: Date())
+extension Date {
+    
+    func timeAgo() -> String {
+        
+        let interval = Calendar.current.dateComponents([.year, .month, .weekOfYear, .day, .hour, .minute, .second],
+                                                       from: self,
+                                                       to: Date())
 
         if let year = interval.year, year > 0 {
             return year == 1 ? "last year" : "\(year)" + " years ago"

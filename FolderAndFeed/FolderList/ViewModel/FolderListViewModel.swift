@@ -11,8 +11,8 @@ protocol FolderListDelegate: AnyObject {
     func didCompleteFolderCreation()
 }
 
-class FolderListViewModel
-{
+class FolderListViewModel {
+    
     weak var listDelegate: FolderListDelegate?
     var parentPath: String = FileManager.documentDirectoryPath
     var parentsArray: [String] = []

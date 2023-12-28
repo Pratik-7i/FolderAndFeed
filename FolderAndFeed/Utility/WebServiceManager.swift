@@ -28,13 +28,13 @@ extension FetchError {
     }
 }
 
-class WebServiceManager
-{
+class WebServiceManager {
+    
     static let shared = WebServiceManager()
     typealias WebServiceCompletionBlock = (_ data: Data?, _ error: Error?) -> Void
     
-    func request(_ url: API, completion: @escaping WebServiceCompletionBlock)
-    {
+    func request(_ url: API, completion: @escaping WebServiceCompletionBlock) {
+        
         guard let url = URL(string: url.rawValue) else {
             completion(nil, FetchError.invalidURL)
             return

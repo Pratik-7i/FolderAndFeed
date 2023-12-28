@@ -72,7 +72,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K93-Lg-yUU">
                                 <rect key="frame" x="12" y="276.66666666666669" width="272" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="cardDescColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-qG-uEi">
@@ -148,10 +148,13 @@
         <image name="comment" width="100" height="100"/>
         <image name="share" width="100" height="100"/>
         <namedColor name="authorNameLabel">
-            <color red="0.39215686274509803" green="0.39215686274509803" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.3919999897480011" green="0.3919999897480011" blue="0.42399999499320984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="cardBgColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardDescColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
